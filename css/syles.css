@@ -1,0 +1,149 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: #4194F0;
+    border-bottom: 3px solid #658080;
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    min-height: 90vh;
+    max-height: auto;
+}
+
+article {
+    width: 85%;
+    height: auto;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+aside {
+    width: 15%;
+    height: auto;
+    background-color: #F0B041;
+    box-shadow: -5px 0px 5px #658080;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 33px;
+    background-color: #4194F0;
+    border-top: 3px solid #658080;
+    text-align: center;
+    color: white;
+    line-height: 0px;
+
+}
+
+.button {
+    position: relative;
+    width: 100%;
+    height: 33px;
+    background-color: #5D7A9B;
+    color: white;
+    line-height: 33px;
+    text-align: center;
+    border-bottom: 2px solid whitesmoke;
+}
+
+
+img {
+    width: 420px;
+    height: 420px;
+}
+
+ol {
+    text-align: left;
+    margin-right: 15px;
+}
+
+p {
+    text-align: left;
+    margin-left: 15px;
+}
+
+aside a {
+    text-decoration: none;
+    color: white;
+}
+
+aside a:hover {
+    color: #41F0F0;
+}
+
+aside .button:hover {
+    background-color: #658080;
+}
+
+.button a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+footer a:hover {
+    color: #41F0F0;
+}
+
+@media screen and (max-width: 1053px) {
+    .button {
+        height: 43px;
+        line-height: 14px;
+        padding-top: 14px;
+    }
+}
+
+@media screen and (max-width: 1028px) {
+    .flipCards {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    aside {
+        order: 1;
+        width: 100%;
+    }
+
+    .button {
+        height: 33px;
+    }
+
+    article {
+        order: 2;
+        width: 100%;
+    }
+}
