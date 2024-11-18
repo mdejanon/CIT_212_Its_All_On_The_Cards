@@ -34,9 +34,9 @@ header {
 }
 
 article {
-    width: 85%;
+    width: 81%;
     height: auto;
-    padding: 20px;
+    padding: 2%;
     background-color: whitesmoke;
 }
 
@@ -146,6 +146,7 @@ footer a:hover {
 
     article {
         order: 2;
-        width: 100%;
+        width: 96%;
+        padding: 2%;
     }
 }
